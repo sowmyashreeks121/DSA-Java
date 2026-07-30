@@ -1,0 +1,26 @@
+class Solution {
+
+    public boolean check(String s, int left, int right) {
+
+        if (left >= right)
+            return true;
+
+        // Skip non-alphanumeric characters
+        if (!Character.isLetterOrDigit(s.charAt(left)))
+            return check(s, left + 1, right);
+
+        if (!Character.isLetterOrDigit(s.charAt(right)))
+            return check(s, left, right - 1);
+
+        // Compare characters (case-insensitive)
+        if (Character.toLowerCase(s.charAt(left)) !=
+            Character.toLowerCase(s.charAt(right)))
+            return false;
+
+        return check(s, left + 1, right - 1);
+    }
+
+    public boolean isPalindrome(String s) {
+        return check(s, 0, s.length() - 1);
+    }
+}
