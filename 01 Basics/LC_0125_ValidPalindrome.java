@@ -1,4 +1,4 @@
-class Solution {
+class LC_0125_ValidPalindrome {
 
     public boolean check(String s, int left, int right) {
 
@@ -6,6 +6,7 @@ class Solution {
             return true;
 
         // Skip non-alphanumeric characters
+        
         if (!Character.isLetterOrDigit(s.charAt(left)))
             return check(s, left + 1, right);
 

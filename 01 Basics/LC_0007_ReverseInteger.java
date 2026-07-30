@@ -1,4 +1,4 @@
-class Solution {
+class SLC_0007_ReverseIntegerolution {
     public int reverse(int x) {
         int rev = 0;
 

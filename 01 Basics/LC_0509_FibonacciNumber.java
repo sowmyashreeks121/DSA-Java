@@ -1,4 +1,4 @@
-class Solution {
+class Fibonacci{
 
     public int fib(int n) {
 
