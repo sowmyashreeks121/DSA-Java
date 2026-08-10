@@ -19,7 +19,7 @@ class Solution {
 
         int[] arr = {1, 1, 2, 2, 2, 3, 3};
 
-        Solution obj = new Solution();
+        rotatebyone obj = new rotatebyone();
 
         int k = obj.removeDuplicates(arr);
 
